@@ -12,20 +12,103 @@
 </head>
 <body>
   <header id="header" class="d-flex">
-    <div class="logo">
+    <div class="header-logo">
       <img src="./assets/rooftop-logo.webp" alt="logo-rooftop">
     </div>
-    <div id="navbar" class="d-flex">
+    <div id="navbar" class="d-flex align-center">
       <button id="btnToggle" data-toggle="navbar-collapse" class="navbar-toggle"><img src="" alt=""></button>
       <div class="navbar-collapse w-full">
         <ul class="nav w-full d-flex justify-end">
-          <li class="nav-item">Academy</li>
-          <li class="nav-item">Contacto</li>
-          <li class="nav-item">Aplica</li>
-          <li class="nav-item btn-blue">Contrata</li>
+          <li class="nav-item nav-item-base">
+            <a target="_blank" rel="noopener" href="https://www.rooftopacademy.com/">Academy</a>
+          </li>
+          <li class="nav-item nav-item-base">
+            <a target="_self" rel="noopener" href="https://rooftop.dev/contact">Contacto</a>
+          </li>
+          <li class="nav-item nav-item-base">
+            <a target="_self" rel="noopener" href="https://rooftop.dev/apply">Aplica</a>
+          </li>
+          <li class="nav-item nav-item-blue">Contrata</li>
         </ul>
       </div>
     </div>
   </header>
+
+  <main id="main" class="w-full">
+    <section id="section" class="d-flex-col">
+      <div class="title-section d-flex-col justify-center">
+        <div id="title-logo">
+          <a href="/">
+            <img src="./assets/rooftop-logo.webp" alt="rooftop">
+          </a>
+        </div>
+
+        <h1 class="title">Contáctanos</h1>
+
+        <p class="subtitle">Completa el formulario y un representante de Rooftop te cantactará en la brevedad.</p>
+
+      </div>
+
+      <div class="contact-form w-full">
+        <div class="form-grid w-full">
+          <input type="text" name="name" autocomplete="off" placeholder="Nombre completo">
+          <select name="section" id="sections">
+            <option class="selected" disabled selected hidden>Enviar a</option>
+            <option value="preguntas">Preguntas_generales</option>
+            <option value="ventas">Ventas</option>
+            <option value="atención">Atención al cliente</option>
+            <option value="prensa">Prensa</option>
+            <option value="partnerships">Partnerships</option>
+            <option value="inversores">Inversores</option>
+            <option value="comunidad">Comunidad</option>
+            <option value="otros">Otros</option>
+          </select>
+          <input type="email" name="email" autocomplete="off" placeholder="Correo electrónico">
+          <textarea class="w-full" name="about" id="about" cols="30" rows="7" placeholder="Me gustaría saber acerca de..."></textarea>
+          <button class="btn">Contactanos</button>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://icongr.am/fontawesome/map-marker.svg?size=128&color=currentColor" alt="place" width="25px">
+          </div>
+          <div class="card-body">
+            <p><strong>Encuéntranos</strong></p>
+            <p>3050 Biscayne Blvd Suite 302,</p>
+            <p>Miami, Florida 33137, US</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="https://icongr.am/fontawesome/envelope-o.svg?size=128&color=currentColor" alt="email" width="25px">
+          </div>
+          <div class="card-body">
+            <p><strong>Envíanos un correo</strong></p>
+            <p>info@rooftop.dev</p>
+          </div>
+        </div>
+      </div>
+
+      <ul class="social">
+        <div class="social-item">
+          <a href="https://www.instagram.com/rooftop.dev/" target="_blank" rel="noopener">
+            <img src="https://icongr.am/fontawesome/instagram.svg?size=128&color=currentColor" width="20px" alt="instagram">
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.facebook.com/Rooftop.dev/">
+            <img src="https://icongr.am/fontawesome/facebook.svg?size=128&color=currentColor" width="20px" alt="facebook">
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/company/rooftopdev/">
+            <img src="https://icongr.am/fontawesome/linkedin.svg?size=128&color=currentColor" alt="linkedin" width="20px">
+          </a>
+        </div>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
