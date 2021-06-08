@@ -35,6 +35,10 @@ html {
   justify-content: flex-end;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .w-full {
   width: 100%;
 }
@@ -51,6 +55,43 @@ html {
 /* Site */
 
 #btnToggle {
+  display: none;
+}
+
+
+.btn {
+  height: 65px;
+  border-radius: 8px;
+  background-color: #28323c;
+  border-color: #28323c;
+  font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+
+.card {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+.card-header {
+  top: 0;
+  left: 0;
+}
+
+.card-body p {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.card-section {
   display: none;
 }
 
