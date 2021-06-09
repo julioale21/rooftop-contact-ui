@@ -51,6 +51,10 @@ html {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -360,18 +364,6 @@ select {
     min-width: 350px;
   }
 }
-
-@media screen and (min-width: 1200px) {
-  #section {
-    gap: calc(100% - 350px - 500px);
-  }
- }
-
- @media screen and (min-width: 1300px) {
-  #section {
-    gap: 25%;
-  }
- }
 
  @media screen and (min-width: 1400px) {
   .container {
