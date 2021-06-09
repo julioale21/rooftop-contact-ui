@@ -11,9 +11,9 @@
   <title>Contact | Rooftop Dev Lab</title>
 </head>
 <body>
-  <header id="header" class="d-flex">
+  <header id="header" class="d-none w-full">
     <div class="header-logo">
-      <img src="./assets/rooftop-logo.webp" alt="logo-rooftop">
+      <img class="w-full" src="./assets/rooftop-logo.webp" alt="logo-rooftop">
     </div>
     <div id="navbar" class="d-flex align-center">
       <button id="btnToggle" data-toggle="navbar-collapse" class="navbar-toggle"><img src="" alt=""></button>
@@ -42,17 +42,14 @@
             <img src="./assets/rooftop-logo.webp" alt="rooftop">
           </a>
         </div>
-
         <h1 class="title">Contáctanos</h1>
-
         <p class="subtitle">Completa el formulario y un representante de Rooftop te cantactará en la brevedad.</p>
-
       </div>
 
       <div class="contact-form w-full">
         <div class="form-grid w-full">
-          <input type="text" name="name" autocomplete="off" placeholder="Nombre completo">
-          <select name="section" id="sections">
+          <input class="w-full" type="text" name="name" autocomplete="off" placeholder="Nombre completo">
+          <select name="section" id="sections" class="w-full">
             <option class="selected" disabled selected hidden>Enviar a</option>
             <option value="preguntas">Preguntas_generales</option>
             <option value="ventas">Ventas</option>
@@ -63,14 +60,14 @@
             <option value="comunidad">Comunidad</option>
             <option value="otros">Otros</option>
           </select>
-          <input type="email" name="email" autocomplete="off" placeholder="Correo electrónico">
+          <input class="w-full" type="email" name="email" autocomplete="off" placeholder="Correo electrónico">
           <textarea class="w-full" name="about" id="about" cols="30" rows="7" placeholder="Me gustaría saber acerca de..."></textarea>
           <button class="btn w-full">Contactanos</button>
         </div>
       </div>
 
       <div class="card-container">
-        <div class="card">
+        <div class="card d-flex w-full">
           <div class="card-header">
             <img src="https://icongr.am/fontawesome/map-marker.svg?size=128&color=currentColor" alt="place" width="25px">
           </div>
@@ -80,7 +77,7 @@
             <p>Miami, Florida 33137, US</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card d-flex w-full">
           <div class="card-header">
             <img src="https://icongr.am/fontawesome/envelope-o.svg?size=128&color=currentColor" alt="email" width="25px">
           </div>
@@ -91,18 +88,18 @@
         </div>
       </div>
 
-      <ul class="social">
-        <div class="social-item">
+      <ul class="social d-flex justify-center align-center">
+        <div class="social-item d-flex justify-center align-center">
           <a href="https://www.instagram.com/rooftop.dev/" target="_blank" rel="noopener">
             <img src="https://icongr.am/fontawesome/instagram.svg?size=128&color=currentColor" width="20px" alt="instagram">
           </a>
         </div>
-        <div class="social-item">
+        <div class="social-item d-flex justify-center align-center">
           <a href="https://www.facebook.com/Rooftop.dev/">
             <img src="https://icongr.am/fontawesome/facebook.svg?size=128&color=currentColor" width="20px" alt="facebook">
           </a>
         </div>
-        <div class="social-item">
+        <div class="social-item d-flex justify-center align-center">
           <a href="https://www.linkedin.com/company/rooftopdev/">
             <img src="https://icongr.am/fontawesome/linkedin.svg?size=128&color=currentColor" alt="linkedin" width="20px">
           </a>
