@@ -27,6 +27,12 @@ html {
   justify-content: flex-end;
 }
 
+#body {
+  background-image: url("./assets/rooftop-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .d-flex {
   display: flex;
   flex-direction: row;
@@ -82,6 +88,7 @@ html {
   background-color: white;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
   gap: 1rem;
 }
 
@@ -147,8 +154,10 @@ select {
   height: 40px;
 }
 
-#main {
+.container {
+  margin: 0 auto;
   margin-top: 3rem;
+  max-width: 90%;
 }
 
 .nav {
@@ -185,7 +194,6 @@ select {
 }
 
 #section {
-  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -206,7 +214,7 @@ select {
   margin: 0 1rem;
   display: inline-flex;
   padding: 0.5rem;
-  background-color: #F0F0F0;
+  background-color: #E4E4E4;
   border-radius: 5px;
 }
 
@@ -231,6 +239,12 @@ select {
   padding: 1rem 0;
 }
 
+@media screen and (min-width: 586px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card { 
     max-width: 400px;
@@ -246,6 +260,10 @@ select {
     order: 3
   }
 
+  .container {
+    max-width: 80%;
+  }
+
   .form-item:nth-of-type(1){
     width: 49.5%;
     order: 1;
@@ -259,12 +277,10 @@ select {
   }
 
   #section {
-    max-width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-
 
   .social {
     order: 4;
@@ -274,7 +290,6 @@ select {
     display: none;
   }
 
-  
   .title {
     font-size: 2.8rem;
   }
@@ -286,16 +301,15 @@ select {
     max-width: 60%;
   }
 
-
   #header {
     display: flex;
   }
 }
 
-
-@media screen and (min-width: 1170px) {
-  #header {
-    padding: 0 5%;
+@media screen and (min-width: 1200px) {
+  .card { 
+    max-width: 350px;
+    min-width: 350px;
   }
 
   .card-container {
@@ -304,10 +318,13 @@ select {
     margin-top: -19rem;
   }
 
+  .container {
+    max-width: 90%;
+  }
+
   .contact-info:nth-of-type(1) {
     max-width: 350px;
   }
-
 
   .contact-form {
     order: 2;
@@ -316,12 +333,9 @@ select {
 
   #section {
     display: flex;
-    width: 90%;
     flex-direction: row;
     margin-top: 6rem;
-    gap: 30%;
   }
-
 
   .social {
     order: 4;
@@ -334,6 +348,10 @@ select {
     margin: 0 0.25rem;
   }
 
+  .subtitle {
+    font-size: 1rem;
+  }
+
   .title-section {
     order: 1;
     margin-top: -22rem;
@@ -341,6 +359,23 @@ select {
     max-width: 350px;
     min-width: 350px;
   }
-  
 }
+
+@media screen and (min-width: 1200px) {
+  #section {
+    gap: calc(100% - 350px - 500px);
+  }
+ }
+
+ @media screen and (min-width: 1300px) {
+  #section {
+    gap: 25%;
+  }
+ }
+
+ @media screen and (min-width: 1400px) {
+  .container {
+    width: 75%;
+  }
+ }
 
