@@ -334,6 +334,14 @@ select {
     min-width: 350px;
   }
 
+  .card-body-title {
+    font-size: 1rem;
+  }
+
+  .card-body-text {
+    font-size: 0.8rem;
+  }
+
   .card-container {
     order: 3;
     width: 60%;
@@ -351,6 +359,10 @@ select {
   .contact-form {
     order: 2;
     max-width: 500px;
+  }
+
+  .nav-item {
+    font-size: 0.8rem;
   }
 
   #section {
